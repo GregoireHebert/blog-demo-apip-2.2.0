@@ -3,13 +3,24 @@
     "license": "proprietary",
     "require": {
         "php": "^7.0.8",
-        "api-platform/api-pack": "^1.0",
+
+        "api-platform/core": "^2.2",
+        "doctrine/annotations": "^1.6",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/orm": "^2.4.5",
         "guzzlehttp/guzzle": "^6.0",
         "nelmio/cors-bundle": "^1.5",
+        "phpdocumentor/reflection-docblock": "^3.0 || ^4.0",
+        "symfony/asset": "^3.0 || ^4.0",
         "symfony/console": "^3.3 || ^4.0",
+        "symfony/expression-language": "^3.0 || ^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^3.3 || ^4.0",
-        "symfony/yaml": "^3.3 || ^4.0"
+        "symfony/security-bundle": "^3.0 || ^4.0",
+        "symfony/twig-bundle": "^3.0 || ^4.0",
+        "symfony/validator": "^3.0 || ^4.0",
+        "symfony/yaml": "^3.3 || ^4.0",
+        "webonyx/graphql-php": "^0.11.5"
     },
     "config": {
         "preferred-install": {
@@ -46,8 +57,9 @@
     },
     "extra": {
         "symfony": {
-            "id": "",
+            "id": "01C4D8S80Q66S3BX0TA0DNJ7X7",
             "allow-contrib": false
         }
-    }
+    },
+    "minimum-stability": "beta"
 }

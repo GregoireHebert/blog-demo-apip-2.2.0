@@ -1,4 +1,7 @@
 api_platform:
+    collection:
+        pagination:
+            items_per_page: 5 # Default value
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
     title: Hello API Platform
@@ -11,3 +14,10 @@ api_platform:
         shared_max_age: 3600
         vary: ['Content-Type', 'Authorization']
         public: true
+
+
+services:
+    article.boolean_filter:
+        parent: 'api_platform.doctrine.orm.boolean_filter'
+        arguments: [ { enabled: ~ } ]
+        tags: [ 'api_platform.filter' ]

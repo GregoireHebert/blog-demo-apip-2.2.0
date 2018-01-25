@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@api-platform/admin": "^0.1.15"
+    "@api-platform/admin": "^0.1.15",
+    "aor-rich-text-input": "^1.0.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.14"
